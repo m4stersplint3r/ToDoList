@@ -1,0 +1,9 @@
+﻿@model List<ToDoItem> 
+<h1>Welcome to your task list</h1>
+
+@foreach (var item in Model)
+{
+    <p>Task Description: @item.Description</p>
+    <p>Due Date: @item.DueDate</p>
+    <hr />
+}
